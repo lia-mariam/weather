@@ -1,0 +1,99 @@
+/* Basic reset and setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #5f4b8b; /* Purple background */
+  color: #fff; /* White text for contrast */
+  text-align: center;
+  padding: 50px;
+  transition: background 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #ffdd57; /* Yellow color for the title */
+}
+
+input, button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+input {
+  width: 250px;
+  background-color: #fff;
+  border: 2px solid #f1c40f; /* Yellow border */
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #ffdd57; /* Yellow button */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f1c40f; /* Lighter yellow on hover */
+}
+
+.weather-card {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark background for contrast */
+  color: white; /* White text */
+  padding: 20px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+}
+
+.weather-card h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #ffdd57; /* Yellow color for city name */
+}
+
+.weather-card p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+#weatherInfo {
+  margin-top: 20px;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Background settings */
+body {
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+body::before {
+  content: ''; /* Creating an overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: -1; /* Place it behind the content */
+}
